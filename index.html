@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bate papo UOL</title>
+</head>
+<body>
+    <header>
+        <img src="/imgs/logo-uol.svg">
+        <ion-icon name="people"></ion-icon>
+    </header>
+    <aside>
+        <div class="sidebar">
+            <div class="titulo-contatos">Escolha um contato para enviar mensagem:</div>
+            <ul class="lista-pessoas">
+                <li>
+                    <ion-icon name="people"></ion-icon>
+                    <span>Todos</span>
+                </li>
+                <li>
+                    <ion-icon name="person-circle"></ion-icon>
+                    <span>João</span>
+                    <div class="check">
+                        <ion-icon name="checkmark"></ion-icon>
+                    </div>
+                </li>
+                <li>
+                    <ion-icon name="person-circle"></ion-icon>
+                    <span>Maria</span>
+                    <div class="check">
+                        <ion-icon name="checkmark"></ion-icon>
+                    </div>
+                </li>
+            </ul>
+            <div class="titulo-visibilidade">Escolha a visibilidade:</div>
+            <div class="visibilidade">
+                <div class="opcao-visibilidade">
+                    <ion-icon name="lock-open"></ion-icon>
+                    <span>Público</span>
+                </div>
+                <div class="opcao-visibilidade">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    <span>Reservadamente</span>
+                    <div class="check-visibilidade">
+                        <ion-icon name="checkmark"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="chat">
+        <div class="mensagem status">
+            <span>(09:21:45)</span><strong> João</strong> entra na sala...
+        </div>
+        <div class="mensagem public">
+            <span>(09:21:45)</span><strong> João</strong> para <strong>Todos</strong>: Bom dia
+        </div>
+        <div class="mensagem public">
+            <span>(09:21:45)</span><strong> João</strong> para <strong>Maria</strong>: olá
+        </div>
+        <div class="mensagem reservada">
+            <span>(09:21:45)</span><strong> João</strong> reservadamente para <strong>Maria</strong>: oi gatinha, quer tc?
+        </div>
+    </div>
+    <footer>
+        <input type="text" name="input" placeholder="Escreva aqui...">
+        <ion-icon name="paper-plane-outline"></ion-icon>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
